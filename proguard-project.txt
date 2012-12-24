@@ -1,0 +1,41 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# Specifies the number of optimization passes to be performed. By default, a single pass is performed. Multiple passes may result in further improvements. If no improvements are found after an optimization pass, the optimization is ended. Only applicable when optimizing.
+-optimizationpasses 5
+
+# Specifies not to generate mixed-case class names while obfuscating. By default, obfuscated class names can contain a mix of upper-case characters and lower-case characters. This creates perfectly acceptable and usable jars. Only if a jar is unpacked on a platform with a case-insensitive filing system (say, Windows), the unpacking tool may let similarly named class files overwrite each other. Code that self-destructs when it's unpacked! Developers who really want to unpack their jars on Windows can use this option to switch off this behavior. Obfuscated jars will become slightly larger as a result. Only applicable when obfuscating.
+-dontusemixedcaseclassnames
+
+#Specifies to write out some more information during processing. If the program terminates with an exception, this option will print out the entire stack trace, instead of just the exception message.
+-verbose
+
+#Specifies the library jars (or wars, ears, zips, or directories) of the application to be processed. The files in these jars will not be included in the output jars. The specified library jars should at least contain the class files that are extended by application class files. Library class files that are only called needn't be present, although their presence can improve the results of the optimization step. The entries in the class path can be filtered, as explained in the filters section. For better readability, class path entries can be specified using multiple -libraryjars options.
+#Please note that the boot path and the class path set for running ProGuard are not considered when looking for library classes. This means that you explicitly have to specify the run-time jar that your code will use. Although this may seem cumbersome, it allows you to process applications targeted at different run-time environments. For example, you can process J2SE applications as well as JME midlets or Android apps, just by specifying the appropriate run-time jar.
+-libraryjars libs/android-support-v4.jar
+
+#Specifies classes and class members (fields and methods) to be preserved as entry points to your code. For example, in order to keep an application, you can specify the main class along with its main method. In order to process a library, you should specify all publicly accessible elements.
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.preference.Preference
