@@ -1,0 +1,600 @@
+android.support.v4.app.ActivityCompatHoneycomb -> a.a.a.a.a:
+    android.support.v4.app.ActivityCompatHoneycomb next$fe619d5 -> a
+    android.support.v4.app.ActivityCompatHoneycomb prev$fe619d5 -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackRecord -> a.a.a.a.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> l
+    android.support.v4.app.ActivityCompatHoneycomb mHead$fe619d5 -> a
+    android.support.v4.app.ActivityCompatHoneycomb mTail$fe619d5 -> m
+    int mNumOp -> b
+    int mTransition -> c
+    int mTransitionStyle -> d
+    boolean mAddToBackStack -> e
+    java.lang.String mName -> f
+    int mIndex -> g
+    int mBreadCrumbTitleRes -> h
+    java.lang.CharSequence mBreadCrumbTitleText -> i
+    int mBreadCrumbShortTitleRes -> j
+    java.lang.CharSequence mBreadCrumbShortTitleText -> k
+    java.lang.String toString() -> toString
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+    void addOp$568ae146(android.support.v4.app.ActivityCompatHoneycomb) -> a
+    void bumpBackStackNesting(int) -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> a
+android.support.v4.app.BackStackState -> a.a.a.a.c:
+    int[] mOps -> b
+    int mTransition -> c
+    int mTransitionStyle -> d
+    java.lang.String mName -> e
+    int mIndex -> f
+    int mBreadCrumbTitleRes -> g
+    java.lang.CharSequence mBreadCrumbTitleText -> h
+    int mBreadCrumbShortTitleRes -> i
+    java.lang.CharSequence mBreadCrumbShortTitleText -> j
+    android.os.Parcelable$Creator CREATOR -> a
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> a.a.a.a.d:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> a.a.a.a.e:
+    java.util.HashMap sClassMap -> M
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    android.support.v4.app.FragmentManagerImpl mChildFragmentManager -> u
+    android.support.v4.app.Fragment mParentFragment -> v
+    int mFragmentId -> w
+    int mContainerId -> x
+    java.lang.String mTag -> y
+    boolean mHidden -> z
+    boolean mDetached -> A
+    boolean mRetainInstance -> B
+    boolean mRetaining -> C
+    boolean mMenuVisible -> D
+    boolean mCalled -> E
+    int mNextAnim -> F
+    android.view.ViewGroup mContainer -> G
+    android.view.View mView -> H
+    android.view.View mInnerView -> I
+    boolean mDeferStart -> J
+    boolean mUserVisibleHint -> K
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> L
+    boolean mLoadersStarted -> N
+    boolean mCheckedForLoaderManager -> O
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState(android.os.Bundle) -> a
+    void setIndex(int,android.support.v4.app.Fragment) -> a
+    boolean isInBackStack() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    android.content.res.Resources getResources() -> b
+    void onHiddenChanged$1385ff() -> c
+    void onActivityResult$6eb84b52() -> d
+    android.view.LayoutInflater getLayoutInflater$2ee30c11() -> e
+    void onInflate$423a76cd() -> f
+    void onAttach$63a22f9() -> g
+    android.view.animation.Animation onCreateAnimation$24236ca7() -> h
+    void onViewCreated$65f1d89() -> i
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onLowMemory() -> onLowMemory
+    void initState() -> j
+    void onDetach() -> k
+    void onDestroyOptionsMenu() -> l
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void performCreate(android.os.Bundle) -> b
+    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void performActivityCreated(android.os.Bundle) -> c
+    void performStart() -> m
+    void performResume() -> n
+    void performConfigurationChanged(android.content.res.Configuration) -> a
+    void performLowMemory() -> o
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean performPrepareOptionsMenu(android.view.Menu) -> a
+    boolean performOptionsItemSelected(android.view.MenuItem) -> a
+    boolean performContextItemSelected(android.view.MenuItem) -> b
+    void performOptionsMenuClosed(android.view.Menu) -> b
+    void performSaveInstanceState(android.os.Bundle) -> d
+    void performPause() -> p
+    void performStop() -> q
+    void performReallyStop() -> r
+    void performDestroyView() -> s
+    void performDestroy() -> t
+android.support.v4.app.Fragment$1 -> a.a.a.a.f:
+    android.support.v4.app.Fragment this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.Fragment$InstantiationException -> a.a.a.a.g:
+android.support.v4.app.FragmentActivity -> a.a.a.a.h:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    android.support.v4.app.FragmentContainer mContainer -> e
+    boolean mCreated -> f
+    boolean mResumed -> g
+    boolean mStopped -> c
+    boolean mReallyStopped -> h
+    boolean mRetaining -> d
+    boolean mOptionsMenuInvalidated -> i
+    boolean mCheckedForLoaderManager -> j
+    boolean mLoadersStarted -> k
+    java.util.HashMap mAllLoaderManagers -> l
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> m
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a_
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void supportInvalidateOptionsMenu() -> b_
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    java.lang.String viewToString(android.view.View) -> a
+    void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
+    void doReallyStop(boolean) -> a
+    void onAttachFragment$65850823() -> c
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragment(java.lang.String) -> a
+    android.support.v4.app.LoaderManager getSupportLoaderManager() -> d
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(java.lang.String,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$1 -> a.a.a.a.i:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.app.FragmentActivity$2 -> a.a.a.a.j:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> a.a.a.a.k:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> a.a.a.a.l:
+    java.util.ArrayList fragments -> a
+    java.util.HashMap loaders -> b
+android.support.v4.app.FragmentContainer -> a.a.a.a.m:
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentManager -> a.a.a.a.n:
+android.support.v4.app.FragmentManagerImpl -> a.a.a.a.o:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> f
+    boolean mExecutingActions -> g
+    java.util.ArrayList mActive -> b
+    java.util.ArrayList mAdded -> c
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    int mCurState -> d
+    android.support.v4.app.FragmentActivity mActivity -> m
+    android.support.v4.app.FragmentContainer mContainer -> n
+    android.support.v4.app.Fragment mParent -> o
+    boolean mNeedMenuInvalidate -> p
+    boolean mStateSaved -> q
+    boolean mDestroyed -> r
+    java.lang.String mNoTransactionsBecause -> e
+    boolean mHavePendingDeferredStart -> s
+    android.os.Bundle mStateBundle -> t
+    android.util.SparseArray mStateArray -> u
+    java.lang.Runnable mExecCommit -> v
+    android.view.animation.Interpolator DECELERATE_QUINT -> w
+    android.view.animation.Interpolator DECELERATE_CUBIC -> x
+    void throwException(java.lang.RuntimeException) -> a
+    boolean popBackStackImmediate() -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation$376f30fd(float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation$424ea1bd(float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> a
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> b
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> c
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> a
+    java.util.ArrayList retainNonConfig() -> d
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> b
+    android.os.Parcelable saveAllState() -> e
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
+    void noteStateNotSaved() -> f
+    void dispatchCreate() -> g
+    void dispatchActivityCreated() -> h
+    void dispatchStart() -> i
+    void dispatchResume() -> j
+    void dispatchPause() -> k
+    void dispatchStop() -> l
+    void dispatchReallyStop() -> m
+    void dispatchDestroyView() -> n
+    void dispatchDestroy() -> o
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> p
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+android.support.v4.app.FragmentManagerImpl$1 -> a.a.a.a.p:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> a.a.a.a.q:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> a.a.a.a.r:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> a.a.a.a.s:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> a.a.a.a.t:
+    java.lang.String mClassName -> d
+    int mIndex -> e
+    boolean mFromLayout -> f
+    int mFragmentId -> g
+    int mContainerId -> h
+    java.lang.String mTag -> i
+    boolean mRetainInstance -> j
+    boolean mDetached -> k
+    android.os.Bundle mArguments -> l
+    android.os.Bundle mSavedFragmentState -> a
+    android.support.v4.app.Fragment mInstance -> b
+    android.os.Parcelable$Creator CREATOR -> c
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> a.a.a.a.u:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTransaction -> a.a.a.a.v:
+android.support.v4.app.LoaderManager -> a.a.a.a.w:
+    android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> a.a.a.a.x:
+    android.support.v4.content.Loader onCreateLoader$e57f803() -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset$5dda1f52() -> b
+android.support.v4.app.LoaderManagerImpl -> a.a.a.a.y:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    java.lang.String mWho -> d
+    android.support.v4.app.FragmentActivity mActivity -> e
+    boolean mStarted -> f
+    boolean mRetaining -> g
+    boolean mCreatingLoader -> h
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks) -> b
+    android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> a.a.a.a.z:
+    int mId -> a
+    android.os.Bundle mArgs -> k
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> b
+    android.support.v4.content.Loader mLoader -> c
+    boolean mHaveData -> d
+    boolean mDeliveredData -> e
+    java.lang.Object mData -> f
+    boolean mStarted -> g
+    boolean mRetaining -> h
+    boolean mRetainingStarted -> i
+    boolean mReportNextStart -> j
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl this$0 -> n
+    void start() -> a
+    void stop() -> b
+    void destroy() -> c
+    void onLoadComplete(android.support.v4.content.Loader,java.lang.Object) -> a
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> b
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> a.a.a.a.aa:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> a.a.a.a.ab:
+android.support.v4.content.AsyncTaskLoader -> a.a.a.b.a:
+    android.support.v4.content.AsyncTaskLoader$LoadTask mTask -> a
+    android.support.v4.content.AsyncTaskLoader$LoadTask mCancellingTask -> g
+    long mLastLoadCompleteTime -> b
+    void onForceLoad() -> a
+    boolean cancelLoad() -> b
+    void onCanceled(java.lang.Object) -> a
+    void executePendingTask() -> c
+    void dispatchOnCancelled(android.support.v4.content.AsyncTaskLoader$LoadTask,java.lang.Object) -> a
+    java.lang.Object loadInBackground() -> d
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.AsyncTaskLoader$LoadTask -> a.a.a.b.b:
+    java.lang.Object result -> c
+    boolean waiting -> a
+    java.util.concurrent.CountDownLatch done -> d
+    android.support.v4.content.AsyncTaskLoader this$0 -> e
+    void onPostExecute(java.lang.Object) -> a
+    void onCancelled() -> a
+    void run() -> run
+    java.lang.Object doInBackground(java.lang.Object[]) -> a
+android.support.v4.content.CursorLoader -> a.a.a.b.c:
+    android.support.v4.content.Loader$ForceLoadContentObserver mObserver -> g
+    android.net.Uri mUri -> h
+    java.lang.String[] mProjection -> i
+    java.lang.String mSelection -> j
+    java.lang.String[] mSelectionArgs -> k
+    java.lang.String mSortOrder -> l
+    android.database.Cursor mCursor -> m
+    void deliverResult(android.database.Cursor) -> a
+    void onStartLoading() -> e
+    void onStopLoading() -> f
+    void onReset() -> g
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    java.lang.Object loadInBackground() -> d
+    void onCanceled(java.lang.Object) -> a
+    void deliverResult(java.lang.Object) -> b
+android.support.v4.content.Loader -> a.a.a.b.d:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    android.content.Context mContext -> c
+    boolean mStarted -> d
+    boolean mAbandoned -> g
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void deliverResult(java.lang.Object) -> b
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> h
+    void onStartLoading() -> e
+    void forceLoad() -> i
+    void onForceLoad() -> a
+    void stopLoading() -> j
+    void onStopLoading() -> f
+    void reset() -> k
+    void onReset() -> g
+    void onContentChanged() -> l
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$ForceLoadContentObserver -> a.a.a.b.e:
+    android.support.v4.content.Loader this$0 -> a
+    boolean deliverSelfNotifications() -> deliverSelfNotifications
+    void onChange(boolean) -> onChange
+android.support.v4.content.Loader$OnLoadCompleteListener -> a.a.a.b.f:
+    void onLoadComplete(android.support.v4.content.Loader,java.lang.Object) -> a
+android.support.v4.content.ModernAsyncTask -> a.a.a.b.g:
+    java.util.concurrent.ThreadFactory sThreadFactory -> a
+    java.util.concurrent.BlockingQueue sPoolWorkQueue -> c
+    java.util.concurrent.Executor THREAD_POOL_EXECUTOR -> b
+    android.support.v4.content.ModernAsyncTask$InternalHandler sHandler -> d
+    java.util.concurrent.Executor sDefaultExecutor -> e
+    android.support.v4.content.ModernAsyncTask$WorkerRunnable mWorker -> f
+    java.util.concurrent.FutureTask mFuture -> g
+    android.support.v4.content.ModernAsyncTask$Status mStatus -> h
+    java.util.concurrent.atomic.AtomicBoolean mTaskInvoked -> i
+    java.lang.Object postResult(java.lang.Object) -> b
+    java.lang.Object doInBackground(java.lang.Object[]) -> a
+    void onPostExecute(java.lang.Object) -> a
+    void onProgressUpdate$1b4f7664() -> b
+    void onCancelled() -> a
+    boolean cancel(boolean) -> a
+    android.support.v4.content.ModernAsyncTask executeOnExecutor(java.util.concurrent.Executor,java.lang.Object[]) -> a
+    java.util.concurrent.atomic.AtomicBoolean access$200(android.support.v4.content.ModernAsyncTask) -> a
+    java.lang.Object access$300(android.support.v4.content.ModernAsyncTask,java.lang.Object) -> a
+    void access$400(android.support.v4.content.ModernAsyncTask,java.lang.Object) -> b
+    void access$500(android.support.v4.content.ModernAsyncTask,java.lang.Object) -> c
+android.support.v4.content.ModernAsyncTask$1 -> a.a.a.b.h:
+    java.util.concurrent.atomic.AtomicInteger mCount -> a
+    java.lang.Thread newThread(java.lang.Runnable) -> newThread
+android.support.v4.content.ModernAsyncTask$2 -> a.a.a.b.i:
+    android.support.v4.content.ModernAsyncTask this$0 -> b
+    java.lang.Object call() -> call
+android.support.v4.content.ModernAsyncTask$3 -> a.a.a.b.j:
+    android.support.v4.content.ModernAsyncTask this$0 -> a
+    void done() -> done
+android.support.v4.content.ModernAsyncTask$4 -> a.a.a.b.k:
+    int[] $SwitchMap$android$support$v4$content$ModernAsyncTask$Status -> a
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult -> a.a.a.b.l:
+    android.support.v4.content.ModernAsyncTask mTask -> a
+    java.lang.Object[] mData -> b
+android.support.v4.content.ModernAsyncTask$InternalHandler -> a.a.a.b.m:
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.content.ModernAsyncTask$Status -> a.a.a.b.n:
+    android.support.v4.content.ModernAsyncTask$Status PENDING -> a
+    android.support.v4.content.ModernAsyncTask$Status RUNNING -> b
+    android.support.v4.content.ModernAsyncTask$Status FINISHED -> c
+    android.support.v4.content.ModernAsyncTask$Status[] $VALUES -> d
+    android.support.v4.content.ModernAsyncTask$Status[] values() -> a
+android.support.v4.content.ModernAsyncTask$WorkerRunnable -> a.a.a.b.o:
+    java.lang.Object[] mParams -> a
+android.support.v4.util.DebugUtils -> a.a.a.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> a.a.a.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> a.a.a.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    java.lang.Object get(int) -> a
+    void remove(int) -> b
+    void gc() -> c
+    void put(int,java.lang.Object) -> a
+    int size() -> a
+    int keyAt(int) -> c
+    java.lang.Object valueAt(int) -> d
+    void clear() -> b
+    int binarySearch(int[],int,int,int) -> a
+    int idealIntArraySize(int) -> e
+android.support.v4.util.TimeUtils -> a.a.a.c.d:
+    java.lang.Object sFormatSync -> a
+    char[] sFormatStr -> b
+    int accumField(int,int,boolean,int) -> a
+    int printField(char[],int,char,int,boolean,int) -> a
+    void formatDuration(long,java.io.PrintWriter,int) -> a
+    void formatDuration(long,java.io.PrintWriter) -> a
+    void formatDuration(long,long,java.io.PrintWriter) -> a
+android.support.v4.widget.CursorAdapter -> a.a.a.d.a:
+    boolean mDataValid -> a
+    boolean mAutoRequery -> c
+    android.database.Cursor mCursor -> b
+    android.content.Context mContext -> d
+    int mRowIDColumn -> e
+    android.support.v4.widget.CursorAdapter$ChangeObserver mChangeObserver -> f
+    android.database.DataSetObserver mDataSetObserver -> g
+    android.support.v4.widget.CursorFilter mCursorFilter -> h
+    android.database.Cursor getCursor() -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    boolean hasStableIds() -> hasStableIds
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    android.view.View getDropDownView(int,android.view.View,android.view.ViewGroup) -> getDropDownView
+    android.view.View newView$4b8874c5(android.view.ViewGroup) -> a
+    android.view.View newDropDownView(android.content.Context,android.database.Cursor,android.view.ViewGroup) -> a
+    void bindView$4693bf34(android.view.View,android.database.Cursor) -> a
+    void changeCursor(android.database.Cursor) -> a
+    android.database.Cursor swapCursor(android.database.Cursor) -> b
+    java.lang.CharSequence convertToString(android.database.Cursor) -> c
+    android.database.Cursor runQueryOnBackgroundThread(java.lang.CharSequence) -> a
+    android.widget.Filter getFilter() -> getFilter
+    void onContentChanged() -> b
+android.support.v4.widget.CursorAdapter$ChangeObserver -> a.a.a.d.b:
+    android.support.v4.widget.CursorAdapter this$0 -> a
+    boolean deliverSelfNotifications() -> deliverSelfNotifications
+    void onChange(boolean) -> onChange
+android.support.v4.widget.CursorAdapter$MyDataSetObserver -> a.a.a.d.c:
+    android.support.v4.widget.CursorAdapter this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.widget.CursorFilter -> a.a.a.d.d:
+    android.support.v4.widget.CursorFilter$CursorFilterClient mClient -> a
+    java.lang.CharSequence convertResultToString(java.lang.Object) -> convertResultToString
+    android.widget.Filter$FilterResults performFiltering(java.lang.CharSequence) -> performFiltering
+    void publishResults(java.lang.CharSequence,android.widget.Filter$FilterResults) -> publishResults
+android.support.v4.widget.CursorFilter$CursorFilterClient -> a.a.a.d.e:
+    java.lang.CharSequence convertToString(android.database.Cursor) -> c
+    android.database.Cursor runQueryOnBackgroundThread(java.lang.CharSequence) -> a
+    android.database.Cursor getCursor() -> a
+    void changeCursor(android.database.Cursor) -> a
+android.support.v4.widget.ResourceCursorAdapter -> a.a.a.d.f:
+    int mLayout -> c
+    int mDropDownLayout -> d
+    android.view.LayoutInflater mInflater -> e
+    android.view.View newView$4b8874c5(android.view.ViewGroup) -> a
+    android.view.View newDropDownView(android.content.Context,android.database.Cursor,android.view.ViewGroup) -> a
+android.support.v4.widget.SimpleCursorAdapter -> a.a.a.d.g:
+    int[] mFrom -> c
+    int[] mTo -> d
+    int mStringConversionColumn -> e
+    java.lang.String[] mOriginalFrom -> f
+    void bindView$4693bf34(android.view.View,android.database.Cursor) -> a
+    java.lang.CharSequence convertToString(android.database.Cursor) -> c
+    void findColumns(java.lang.String[]) -> a
+    android.database.Cursor swapCursor(android.database.Cursor) -> b
+lt.andro.broadcastlogger.AnyBroadcastReceiver -> lt.andro.broadcastlogger.AnyBroadcastReceiver:
+    java.lang.String TAG -> a
+    java.text.SimpleDateFormat dateFormat -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    java.lang.String getExtrasString(android.content.Intent) -> a
+lt.andro.broadcastlogger.BroadcastMonitoringService -> lt.andro.broadcastlogger.BroadcastMonitoringService:
+    java.lang.String TAG -> a
+    lt.andro.broadcastlogger.AnyBroadcastReceiver mAnyBroadcastReceiver -> b
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void onDestroy() -> onDestroy
+    void showNotification(android.content.Context,java.lang.String) -> a
+lt.andro.broadcastlogger.MainActivity -> lt.andro.broadcastlogger.MainActivity:
+    java.lang.String TAG -> e
+    android.content.Intent mService -> f
+    android.widget.ListView mMainListView -> g
+    android.support.v4.widget.SimpleCursorAdapter mSimpleCursorAdapter -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    android.support.v4.content.Loader onCreateLoader$e57f803() -> a
+    void onLoaderReset$5dda1f52() -> b
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+lt.andro.broadcastlogger.contentprovider.BroadcastContentProvider -> lt.andro.broadcastlogger.contentprovider.BroadcastContentProvider:
+    lt.andro.broadcastlogger.db.BroadcastDatabaseHelper database -> b
+    android.net.Uri CONTENT_URI -> a
+    android.content.UriMatcher sURIMatcher -> c
+    boolean onCreate() -> onCreate
+    android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    java.lang.String getType(android.net.Uri) -> getType
+    android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+lt.andro.broadcastlogger.db.BroadcastDatabaseHelper -> lt.andro.broadcastlogger.a.a:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+lt.andro.broadcastlogger.db.BroadcastTable -> lt.andro.broadcastlogger.a.b:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> a
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> a
