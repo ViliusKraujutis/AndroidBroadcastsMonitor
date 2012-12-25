@@ -15,7 +15,7 @@ A Free Open Source tool for Android developers/power-users.
 https://github.com/ViliusKraujutis/AndroidBroadcastsMonitor
 
 This tool will display and show notification about broadcasts happening in Android System.
-Full list of all captured actions is displayed at the end (it's huge).
+Full list of all captured actions: http://www.andro.lt/2012/12/any-broadcastreceiver-filter-actions.html
 
 Broadcast's intent action and extras are captured and stored into internal database.
 
@@ -31,3 +31,16 @@ https://trello.com/board/androidbroadcastsmonitor/50d8ef7e6c46ce852d00010d
 
 Wanted:
 It's a small tool, but some design would be nice. Please request a pull at GitHub. Thanks.
+
+
+RECENT CHANGES:
+Just a simple application with these components:
+SQLite Table, 
+ContentProvider, 
+Service, 
+BroadcastReceiver, 
+Activity
+
+
+WEBSITE:
+http://www.andro.lt/2012/12/system-broadcasts-monitor-pro.html
