@@ -1,7 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
+        android:id="@+id/menuClean"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="always"
+        android:title="@string/menu_clean"/>
+    <item
         android:id="@+id/menuStart"
+        android:showAsAction="always"
         android:title="@string/menu_start"/>
     <item
         android:id="@+id/menuStop"

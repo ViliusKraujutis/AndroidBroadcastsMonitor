@@ -6,5 +6,6 @@
     <string name="menu_start">Start</string>
     <string name="menu_stop">Stop</string>
     <string name="notification_title">Latest broadcast\'s action is:</string>
+    <string name="menu_clean">Clean</string>
 
 </resources>

@@ -69,12 +69,22 @@ public class AnyBroadcastReceiver extends BroadcastReceiver {
     private String getExtrasString(Intent pIntent) {
         String extrasString = "";
         Bundle extras = pIntent.getExtras();
-        if (extras != null) {
-            Set<String> keySet = extras.keySet();
-            for (String key : keySet) {
-                String extraValue = pIntent.getExtras().get(key).toString();
-                extrasString += key + ": " + extraValue + "\n";
+        try {
+            if (extras != null) {
+                Set<String> keySet = extras.keySet();
+                for (String key : keySet) {
+                    try {
+                        String extraValue = pIntent.getExtras().get(key).toString();
+                        extrasString += key + ": " + extraValue + "\n";
+                    } catch (Exception e) {
+                        Log.d(TAG, "Exception 2 in getExtrasString(): " + e.toString());
+                        extrasString += key + ": Exception:" + e.getMessage() + "\n";
+                    }
+                }
             }
+        } catch (Exception e) {
+            Log.d(TAG, "Exception in getExtrasString(): " + e.toString());
+            extrasString += "Exception:" + e.getMessage() + "\n";
         }
         Log.d(TAG, "extras=" + extrasString);
         return extrasString;

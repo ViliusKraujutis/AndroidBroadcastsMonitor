@@ -11,3 +11,4 @@
 # generated files
 bin/
 gen/
+/proguard

@@ -80,6 +80,10 @@ public class MainActivity extends FragmentActivity implements LoaderCallbacks<Cu
     @Override
     public boolean onMenuItemSelected(int pFeatureId, MenuItem pItem) {
         switch (pItem.getItemId()) {
+            case R.id.menuClean:
+                Log.d(TAG, "Starting service");
+                getContentResolver().delete(BroadcastContentProvider.CONTENT_URI, null, null);
+                return true;
             case R.id.menuStart:
                 Log.d(TAG, "Starting service");
                 startService(mService);
