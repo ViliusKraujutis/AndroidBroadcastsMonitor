@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lt.andro.broadcastlogger"
     android:versionCode="3"
-    android:versionName="1.2" >
+    android:versionName="1.2.20121227" >
 
     <uses-sdk
         android:minSdkVersion="4"
