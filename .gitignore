@@ -12,3 +12,9 @@
 bin/
 gen/
 /proguard
+
+proguard/seeds.txt
+
+proguard/mapping.txt
+
+proguard/dump.txt
