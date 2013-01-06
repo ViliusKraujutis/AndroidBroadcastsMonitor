@@ -23,7 +23,6 @@ public class BroadcastMonitoringService extends Service {
 
     private static final String TAG = BroadcastMonitoringService.class.getSimpleName();
     private static final int NOTIFICATION = 1;
-    protected static final String LOCAL_RECORDS_BROADCAST = "LOCAL_RECORDS_BROADCAST";
     private AnyBroadcastReceiver mAnyBroadcastReceiver;
 
     /*

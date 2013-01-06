@@ -18,3 +18,5 @@ proguard/seeds.txt
 proguard/mapping.txt
 
 proguard/dump.txt
+
+.DS_Store
