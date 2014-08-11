@@ -7,10 +7,10 @@ A tool to subscribe to receive all standard Android broadcasts on your Android d
 Google Play Store Listing details:
 https://play.google.com/store/apps/details?id=lt.andro.broadcastlogger
 
-TITLE:
+##TITLE:
 System Broadcasts Monitor Pro
 
-DESCRIPTION:
+##DESCRIPTION:
 A Free Open Source tool for Android developers/power-users.
 https://github.com/ViliusKraujutis/AndroidBroadcastsMonitor
 
@@ -25,15 +25,18 @@ The service can be started and stopped, so you can run it when you need it.
 
 The application does not require any permissions, so please leave comment what features do you require.
 
-Future development:
+##New Broadcast
+If you want add new Broadcast, you can add an item to custom_broadcast.xml or system_braodcast.xml in res/values.
+
+##Future development:
 See the list of ideas for future development in Trello board:
 https://trello.com/board/androidbroadcastsmonitor/50d8ef7e6c46ce852d00010d
 
-Wanted:
+##Wanted:
 It's a small tool, but some design would be nice. Please request a pull at GitHub. Thanks.
 
 
-RECENT CHANGES:
+##RECENT CHANGES:
 Just a simple application with these components:
 SQLite Table, 
 ContentProvider, 
@@ -42,5 +45,5 @@ BroadcastReceiver,
 Activity
 
 
-WEBSITE:
+##WEBSITE:
 http://www.andro.lt/2012/12/system-broadcasts-monitor-pro.html
