@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 
 package lt.andro.broadcastlogger;
@@ -20,7 +20,7 @@ import android.util.Log;
 /**
  * {@link AnyBroadcastReceiver}<br/>
  * <br/>
- * 
+ *
  * @author Vilius Kraujutis
  * @since Dec 23, 2012 3:30:11 AM
  */
@@ -39,6 +39,10 @@ public class AnyBroadcastReceiver extends BroadcastReceiver {
      */
     @Override
     public void onReceive(Context pContext, Intent pIntent) {
+        if (pIntent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
+            pContext.startService(new Intent(pContext, BroadcastMonitoringService.class));
+        }
+
         Log.d(TAG, "Received Broadcast's intent is: " + pIntent.toString());
         String action = pIntent.getAction();
         String extrasString = getExtrasString(pIntent);
@@ -63,7 +67,7 @@ public class AnyBroadcastReceiver extends BroadcastReceiver {
                 dateFormat.format(Calendar.getInstance().getTime()));
 
         pContext.getContentResolver().insert(BroadcastContentProvider.CONTENT_URI, values);
-        Log.d(TAG, "Saved broadcast");
+        Log.i(TAG, "Saved broadcast: Action: " + pAction  + ", Extras: " + pExtrasString + ", Time: " + dateFormat.format(Calendar.getInstance().getTime()));
     }
 
     private String getExtrasString(Intent pIntent) {
