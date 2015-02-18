@@ -1,6 +1,8 @@
 AndroidBroadcastsMonitor
 ========================
 
+[![Join the chat at https://gitter.im/ViliusKraujutis/AndroidBroadcastsMonitor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ViliusKraujutis/AndroidBroadcastsMonitor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A tool to subscribe to receive all standard Android broadcasts on your Android device.
 
 
