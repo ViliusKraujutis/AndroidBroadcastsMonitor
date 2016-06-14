@@ -150,7 +150,7 @@ public class BroadcastMonitoringService extends Service {
        }
 
         //Custom Broadcast.
-       List<String> customBroadcasts = Arrays.asList(getResources().getStringArray(R.array.system_broadcast));
+       List<String> customBroadcasts = Arrays.asList(getResources().getStringArray(R.array.custom_broadcast));
        for (String customBroadcast : customBroadcasts) {
            pIntentFilter.addAction(customBroadcast);
        }
