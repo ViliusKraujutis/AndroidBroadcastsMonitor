@@ -161,21 +161,10 @@ public class BroadcastMonitoringService extends Service {
      */
     @SuppressWarnings("deprecation")
     public static void showNotification(Context pContext, String pBroadcastAction) {
-//        // TODO use Notification.Builder
-//        Notification notification = new Notification(R.mipmap.ic_launcher, pBroadcastAction,
-//                System.currentTimeMillis());
-
-        // The PendingIntent to launch our activity if the user selects this notification
-        PendingIntent contentIntent = PendingIntent.getActivity(pContext, 0, new Intent(pContext,
-                MainActivity.class), 0);
+        Intent mainActivityIntent = new Intent(pContext,
+                MainActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(pContext, 0, mainActivityIntent, 0);
         CharSequence title = pContext.getText(R.string.notification_title);
-
-//        // Set the info for the views that show in the notification panel.
-//        notification.setLatestEventInfo(pContext, title,
-//                pBroadcastAction, contentIntent);
-//        // Send the notification.
-//        ((NotificationManager) pContext.getSystemService(NOTIFICATION_SERVICE)).notify(NOTIFICATION,
-//                notification);
 
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(pContext)
@@ -184,7 +173,6 @@ public class BroadcastMonitoringService extends Service {
                         .setContentText(pBroadcastAction);
 
         builder.setContentIntent(contentIntent);
-
 
         int notificationId = 1;
         NotificationManager mngr = (NotificationManager) pContext.getSystemService(NOTIFICATION_SERVICE);
