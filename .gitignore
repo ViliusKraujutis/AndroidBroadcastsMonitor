@@ -1,22 +1,9 @@
-# built application files
-*.apk
-*.ap_
-
-# files for the dex VM
-*.dex
-
-# Java class files
-*.class
-
-# generated files
-bin/
 gen/
-/proguard
-
-proguard/seeds.txt
-
-proguard/mapping.txt
-
-proguard/dump.txt
-
-.DS_Store
+.gradle
+.idea
+.settings
+build
+.project
+.classpath
+local.properties
+*.iml
