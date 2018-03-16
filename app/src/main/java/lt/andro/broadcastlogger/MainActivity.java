@@ -4,12 +4,12 @@ package lt.andro.broadcastlogger;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +18,7 @@ import android.widget.ListView;
 import lt.andro.broadcastlogger.contentprovider.BroadcastContentProvider;
 import lt.andro.broadcastlogger.db.BroadcastTable;
 
-public class MainActivity extends FragmentActivity implements LoaderCallbacks<Cursor> {
+public class MainActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private Intent mService;
@@ -80,7 +80,7 @@ public class MainActivity extends FragmentActivity implements LoaderCallbacks<Cu
      * com.actionbarsherlock.view.MenuItem)
      */
     @Override
-    public boolean onMenuItemSelected(int pFeatureId, MenuItem pItem) {
+    public boolean onOptionsItemSelected(MenuItem pItem) {
         switch (pItem.getItemId()) {
             case R.id.menuClean:
                 Log.d(TAG, "Starting service");
@@ -101,7 +101,7 @@ public class MainActivity extends FragmentActivity implements LoaderCallbacks<Cu
             default:
                 break;
         }
-        return super.onMenuItemSelected(pFeatureId, pItem);
+        return super.onOptionsItemSelected(pItem);
     }
 
     /*
