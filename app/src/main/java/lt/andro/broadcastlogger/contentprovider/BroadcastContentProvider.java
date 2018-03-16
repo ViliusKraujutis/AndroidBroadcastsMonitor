@@ -1,4 +1,3 @@
-
 package lt.andro.broadcastlogger.contentprovider;
 
 import java.util.Arrays;
@@ -6,6 +5,7 @@ import java.util.HashSet;
 
 import lt.andro.broadcastlogger.db.BroadcastDatabaseHelper;
 import lt.andro.broadcastlogger.db.BroadcastTable;
+
 import android.content.ContentProvider;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -35,6 +35,7 @@ public class BroadcastContentProvider extends ContentProvider {
             + "/broadcast";
 
     private static final UriMatcher sURIMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+
     static {
         sURIMatcher.addURI(AUTHORITY, BASE_PATH, BROADCASTS);
         sURIMatcher.addURI(AUTHORITY, BASE_PATH + "/#", BROADCAST_ID);
@@ -48,7 +49,7 @@ public class BroadcastContentProvider extends ContentProvider {
 
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs,
-            String sortOrder) {
+                        String sortOrder) {
 
         // Uisng SQLiteQueryBuilder instead of query() method
         SQLiteQueryBuilder queryBuilder = new SQLiteQueryBuilder();
@@ -105,7 +106,7 @@ public class BroadcastContentProvider extends ContentProvider {
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         int uriType = sURIMatcher.match(uri);
         SQLiteDatabase sqlDB = database.getWritableDatabase();
-        int rowsDeleted = 0;
+        int rowsDeleted;
         switch (uriType) {
             case BROADCASTS:
                 rowsDeleted = sqlDB.delete(BroadcastTable.TABLE_NAME, selection, selectionArgs);
@@ -162,8 +163,8 @@ public class BroadcastContentProvider extends ContentProvider {
                 BroadcastTable.COLUMN_TIMESTAMP, BroadcastTable.COLUMN_ID
         };
         if (projection != null) {
-            HashSet<String> requestedColumns = new HashSet<String>(Arrays.asList(projection));
-            HashSet<String> availableColumns = new HashSet<String>(Arrays.asList(available));
+            HashSet<String> requestedColumns = new HashSet<>(Arrays.asList(projection));
+            HashSet<String> availableColumns = new HashSet<>(Arrays.asList(available));
             // Check if all columns which are requested are available
             if (!availableColumns.containsAll(requestedColumns)) {
                 throw new IllegalArgumentException("Unknown columns in projection");

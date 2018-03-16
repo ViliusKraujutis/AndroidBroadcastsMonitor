@@ -1,4 +1,3 @@
-
 package lt.andro.broadcastlogger;
 
 import android.content.Intent;
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         LoaderManager supportLoaderManager = getSupportLoaderManager();
         supportLoaderManager.initLoader(0, null, this);
 
-        mMainListView = (ListView) findViewById(R.id.mainListView);
+        mMainListView = findViewById(R.id.mainListView);
         fillData();
 
         mService = new Intent(this, BroadcastMonitoringService.class);

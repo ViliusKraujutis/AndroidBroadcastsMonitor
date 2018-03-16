@@ -1,4 +1,3 @@
-
 package lt.andro.broadcastlogger;
 
 import android.app.NotificationManager;
