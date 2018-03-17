@@ -18,6 +18,8 @@ import android.widget.ListView;
 import lt.andro.broadcastlogger.contentprovider.BroadcastContentProvider;
 import lt.andro.broadcastlogger.db.BroadcastTable;
 
+import static lt.andro.broadcastlogger.ServiceManagerKt.toggleService;
+
 public class MainActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         fillData();
 
         mService = new Intent(this, BroadcastMonitoringService.class);
-        startService(mService);
+        toggleService(this, mService);
     }
 
     private void fillData() {
@@ -87,13 +89,11 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
                 Log.d(TAG, "Starting service");
                 getContentResolver().delete(BroadcastContentProvider.CONTENT_URI, null, null);
                 return true;
-            case R.id.menuStart:
-                Log.d(TAG, "Starting service");
-                startService(mService);
-                return true;
-            case R.id.menuStop:
-                Log.d(TAG, "Stoping service");
-                stopService(mService);
+            case R.id.menuToggle:
+                Log.d(TAG, "Toggling service");
+                pItem.setTitle(getString(
+                        toggleService(this, mService) ? R.string.menu_stop : R.string.menu_start
+                ));
                 return true;
             case R.id.menuSettings:
                 // TODO enable and implement Settings
