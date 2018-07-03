@@ -1,4 +1,3 @@
-
 package lt.andro.broadcastlogger.db;
 
 import android.database.sqlite.SQLiteDatabase;
@@ -7,7 +6,7 @@ import android.util.Log;
 /**
  * {@link BroadcastTable}<br/>
  * <br/>
- * 
+ *
  * @author Vilius Kraujutis
  * @since Nov 25, 2012 7:08:35 PM
  */

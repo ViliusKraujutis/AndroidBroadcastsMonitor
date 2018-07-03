@@ -1,7 +1,3 @@
-/**
- *
- */
-
 package lt.andro.broadcastlogger;
 
 import java.text.SimpleDateFormat;
@@ -10,6 +6,7 @@ import java.util.Set;
 
 import lt.andro.broadcastlogger.contentprovider.BroadcastContentProvider;
 import lt.andro.broadcastlogger.db.BroadcastTable;
+
 import android.content.BroadcastReceiver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -67,7 +64,7 @@ public class AnyBroadcastReceiver extends BroadcastReceiver {
                 dateFormat.format(Calendar.getInstance().getTime()));
 
         pContext.getContentResolver().insert(BroadcastContentProvider.CONTENT_URI, values);
-        Log.i(TAG, "Saved broadcast: Action: " + pAction  + ", Extras: " + pExtrasString + ", Time: " + dateFormat.format(Calendar.getInstance().getTime()));
+        Log.i(TAG, "Saved broadcast: Action: " + pAction + ", Extras: " + pExtrasString + ", Time: " + dateFormat.format(Calendar.getInstance().getTime()));
     }
 
     private String getExtrasString(Intent pIntent) {

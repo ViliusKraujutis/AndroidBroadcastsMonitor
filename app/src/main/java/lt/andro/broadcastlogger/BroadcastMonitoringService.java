@@ -1,4 +1,3 @@
-
 package lt.andro.broadcastlogger;
 
 import android.app.NotificationManager;
@@ -27,6 +26,7 @@ public class BroadcastMonitoringService extends Service {
     private static final String TAG = BroadcastMonitoringService.class.getSimpleName();
     private static final int NOTIFICATION = 1;
     private AnyBroadcastReceiver mAnyBroadcastReceiver;
+    private static boolean sRunning;
 
     /*
      * (non-Javadoc)
@@ -36,6 +36,7 @@ public class BroadcastMonitoringService extends Service {
     public void onCreate() {
         super.onCreate();
         mAnyBroadcastReceiver = new AnyBroadcastReceiver();
+        sRunning = true;
     }
 
     /*
@@ -74,9 +75,14 @@ public class BroadcastMonitoringService extends Service {
                     "Skipping Exception which might be raising when the receiver is not yet registered");
 
         }
+        sRunning = false;
         hideNotification(getApplicationContext());
         Log.d(TAG, "onDestroy");
         super.onDestroy();
+    }
+
+    public static boolean isRunning() {
+        return sRunning;
     }
 
     private void registerAnyBroadcastReceiver() {
