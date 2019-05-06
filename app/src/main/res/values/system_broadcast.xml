@@ -103,6 +103,7 @@
         <item>android.media.RINGER_MODE_CHANGED</item>
         <item>android.media.SCO_AUDIO_STATE_CHANGED</item>
         <item>android.media.VIBRATE_SETTING_CHANGED</item>
+        <item>android.media.VOLUME_CHANGED_ACTION</item>
         <item>android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION</item>
         <item>android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION</item>
         <item>android.net.conn.BACKGROUND_DATA_SETTING_CHANGED</item>
