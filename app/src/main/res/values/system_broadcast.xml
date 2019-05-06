@@ -92,6 +92,7 @@
         <item>android.intent.action.REBOOT</item>
         <item>android.intent.action.SCREEN_OFF</item>
         <item>android.intent.action.SCREEN_ON</item>
+        <item>android.intent.action.CLOSE_SYSTEM_DIALOGS</item>
         <item>android.intent.action.TIMEZONE_CHANGED</item>
         <item>android.intent.action.TIME_SET</item>
         <item>android.intent.action.TIME_TICK</item>
@@ -103,6 +104,7 @@
         <item>android.media.RINGER_MODE_CHANGED</item>
         <item>android.media.SCO_AUDIO_STATE_CHANGED</item>
         <item>android.media.VIBRATE_SETTING_CHANGED</item>
+        <item>android.media.VOLUME_CHANGED_ACTION</item>
         <item>android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION</item>
         <item>android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION</item>
         <item>android.net.conn.BACKGROUND_DATA_SETTING_CHANGED</item>
