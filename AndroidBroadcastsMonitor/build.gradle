@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+//apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    signingConfigs {
+        sign {
+            storeFile file('C:\\Users\\mario\\OneDrive\\Documents\\Android\\Keystore\\keystore.jks')
+            storePassword '221506217'
+            keyAlias 'mariodantas'
+            keyPassword '221506217'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "lt.andro.broadcastlogger"
+        minSdkVersion 27
+        targetSdkVersion 29
+        versionCode 5
+        versionName "1.5.20180318"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        signingConfig signingConfigs.sign
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+    }
+    ndkVersion '22.0.7026061'
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.4.32'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

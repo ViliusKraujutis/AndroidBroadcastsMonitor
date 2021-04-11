@@ -2,8 +2,14 @@ gen/
 .gradle
 .idea
 .settings
+build/
 build
 .project
 .classpath
 local.properties
 *.iml
+AndroidBroadcastsMonitor/build
+AndroidBroadcastsMonitor/debug
+AndroidBroadcastsMonitor/release
+
+
