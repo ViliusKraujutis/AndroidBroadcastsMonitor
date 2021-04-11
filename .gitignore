@@ -7,7 +7,6 @@ build
 .classpath
 local.properties
 *.iml
-AndroidBroadcastsMonitor.zip
 AndroidBroadcastsMonitor/build
 AndroidBroadcastsMonitor/debug
 AndroidBroadcastsMonitor/release
