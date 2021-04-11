@@ -2,6 +2,7 @@ gen/
 .gradle
 .idea
 .settings
+build/
 build
 .project
 .classpath

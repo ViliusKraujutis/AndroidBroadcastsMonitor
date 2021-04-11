@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android-extensions'
+
 
 android {
     signingConfigs {
@@ -31,6 +32,9 @@ android {
         }
     }
     ndkVersion '22.0.7026061'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
